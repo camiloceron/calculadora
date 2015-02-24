@@ -32,8 +32,8 @@ function mostrarMensaje(x){
 function operacion(oper){
 	bandatos=1;
 	document.getElementById("result").value = "";		
-	if(oper!=10){operador = oper;}
-	
+	if(oper!=10){operador = oper;}	
+
 	if(ban==1)
 	{
 		if(operador==1)	{
@@ -47,11 +47,7 @@ function operacion(oper){
 		resultado1=r;
 		resultado2=0;			
 	}		  	
-	ban=1;
-
-	if (oper==10) {
-			document.getElementById("result").value = r;	
-		}
+	ban=1;	
 }
 
 function mostrarResultado(){
