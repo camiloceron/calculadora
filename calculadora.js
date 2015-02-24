@@ -32,30 +32,34 @@ function mostrarMensaje(x){
 function operacion(oper){
 	bandatos=1;
 	document.getElementById("result").value = "";		
-	if(oper!=10){operador = oper;}	
-
+	if(oper!=10){operador = oper;}
 	if(ban==1)
 	{
-		if(operador==1)	{
+		if(operador==1 && resultado2!= null)	{
 			r = parseInt(resultado1+resultado2);
 			document.getElementById("result").value = r;
 		}		
-    	if (operador==2){
+    	else if (operador==2 && resultado2!= null){
 			r = parseInt(resultado1-resultado2);					
 			document.getElementById("result").value = r;	 		
 		}
+		else if (operador==3 && resultado2!= null){
+			r = parseInt(resultado1*resultado2);
+			
+			document.getElementById("result").value = r;	 		
+		}
+		else if (operador==4 && resultado2!= null){
+			if(resultado2==0)
+			{
+				document.getElementById("result").value ="Error de division entre 0";
+			}
+			else{
+				r = parseFloat(resultado1/resultado2);					
+				document.getElementById("result").value = r;	 		
+			}	
+		}
 		resultado1=r;
-		resultado2=0;			
+		resultado2= null;			
 	}		  	
 	ban=1;	
-}
-
-function mostrarResultado(){
-	/*if(operador==1)	{
-		r = parseInt(resultado1+resultado2);
-	}		
-    if (operador==2){
-		r = parseInt(resultado1-resultado2);	 		
-	}*/
-	document.getElementById("result").value = r;	
 }
