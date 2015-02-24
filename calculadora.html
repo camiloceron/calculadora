@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>calculadora</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="calculadora.js"></script>
+</head>
+<body>
+	<table >		
+		 <caption><h1>CALCULADORA</h1></caption>	
+		 <tr align="center" valign="middle">
+		 	<td colspan="10">
+		 	  <input type="text" id="result" disabled>				 
+		    </td>
+		 </tr>
+		<tr>			
+			<td align="center" onclick="mostrarMensaje(1)">1</td> 
+			<td align="center" onclick="mostrarMensaje(2)">2</td> 
+			<td align="center" onclick="mostrarMensaje(3)">3</td> 
+			<td align="center" onclick="mostrarMensaje(4)">4</td> 
+			<td align="center" onclick="mostrarMensaje(5)">5</td> 
+			<td align="center" onclick="mostrarMensaje(6)">6</td> 
+			<td align="center" onclick="mostrarMensaje(7)">7</td> 
+			<td align="center" onclick="mostrarMensaje(8)">8</td> 
+			<td align="center" onclick="mostrarMensaje(9)">9</td> 
+			<td align="center" onclick="mostrarMensaje(0)">0</td> 
+		</tr>
+		<tr>
+			<td align="center" onclick="operacion(1)">+</td> 
+			<td align="center" onclick="operacion(2)">-</td> 
+			<td align="center" onclick="operacion(3)">*</td> 
+			<td align="center" onclick="operacion(4)">/</td> 
+			<td align="center" onclick="operacion(5)">raiz</td> 
+			<td align="center" onclick="operacion(6)">x2</td> 
+		<tr> 
+			<td align="center" onclick="operador(6)">senx</td> 
+			<td align="center" onclick="operador(6)">cosx</td> 
+			<td align="center" onclick="operador(6)">tanx</td> 
+			<td colspan="3"><input type="submit" value="="class="anchofijo" onclick="mostrarResultado()"></td> 
+		</tr>		
+	</table>
+
+</body>
+</html>
