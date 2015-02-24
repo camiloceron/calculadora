@@ -1,7 +1,7 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 
 table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-    font-size: 12px;    margin: 45px;     width: 480px; text-align: left;    border-collapse: separate; border: blue 1px solid; }
+    font-size: 14px;   margin: 45px;     width: 480px; text-align: left;    border-collapse: separate; border: blue 1px solid; }
 
 th {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: #b9c9fe;
     border-top: 4px solid #aabcfe;    border-bottom: 1px solid #fff; color: #039; }
@@ -12,3 +12,5 @@ td {    padding: 8px;     background: #e8edff;     border-bottom: 1px solid #fff
 td:hover { background: #d0dafd; color: #339; }
 
 input.anchofijo {width: 130px;}
+
+p {color:black; font-size: 16px}

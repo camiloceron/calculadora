@@ -30,21 +30,22 @@ function mostrarMensaje(x){
 }
 
 function operacion(oper){
+  if(resultado1!=null){
 	bandatos=1;
 	document.getElementById("result").value = "";		
 	if(oper!=10){operador = oper;}
 	if(ban==1)
 	{
 		if(operador==1 && resultado2!= null)	{
-			r = parseInt(resultado1+resultado2);
+			r = parseFloat(resultado1+resultado2);
 			document.getElementById("result").value = r;
 		}		
     	else if (operador==2 && resultado2!= null){
-			r = parseInt(resultado1-resultado2);					
+			r = parseFloat(resultado1-resultado2);					
 			document.getElementById("result").value = r;	 		
 		}
 		else if (operador==3 && resultado2!= null){
-			r = parseInt(resultado1*resultado2);
+			r = parseFloat(resultado1*resultado2);
 			
 			document.getElementById("result").value = r;	 		
 		}
@@ -62,4 +63,11 @@ function operacion(oper){
 		resultado2= null;			
 	}		  	
 	ban=1;	
+  }
+}
+
+function reiniciar(){
+	resultado1=null;
+	ban=0; r=0; operador=0; bandatos=0;
+	document.getElementById("result").value ="";
 }

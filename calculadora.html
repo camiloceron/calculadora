@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="calculadora.js"></script>
 </head>
 <body>
-	<table >		
+	<table>		
 		 <caption><h1>CALCULADORA</h1></caption>	
 		 <tr align="center" valign="middle">
 		 	<td colspan="10">
@@ -14,29 +14,30 @@
 		    </td>
 		 </tr>
 		<tr>			
-			<td align="center" onclick="mostrarMensaje(1)">1</td> 
-			<td align="center" onclick="mostrarMensaje(2)">2</td> 
-			<td align="center" onclick="mostrarMensaje(3)">3</td> 
-			<td align="center" onclick="mostrarMensaje(4)">4</td> 
-			<td align="center" onclick="mostrarMensaje(5)">5</td> 
-			<td align="center" onclick="mostrarMensaje(6)">6</td> 
-			<td align="center" onclick="mostrarMensaje(7)">7</td> 
-			<td align="center" onclick="mostrarMensaje(8)">8</td> 
-			<td align="center" onclick="mostrarMensaje(9)">9</td> 
-			<td align="center" onclick="mostrarMensaje(0)">0</td> 
+			<td align="center" onclick="mostrarMensaje(1)"><p>1</p></td> 
+			<td align="center" onclick="mostrarMensaje(2)"><p>2</p></td> 
+			<td align="center" onclick="mostrarMensaje(3)"><p>3</p></td> 
+			<td align="center" onclick="mostrarMensaje(4)"><p>4</p></td> 
+			<td align="center" onclick="mostrarMensaje(5)"><p>5</p></td> 
+			<td align="center" onclick="mostrarMensaje(6)"><p>6</p></td> 
+			<td align="center" onclick="mostrarMensaje(7)"><p>7</p></td> 
+			<td align="center" onclick="mostrarMensaje(8)"><p>8</p></td> 
+			<td align="center" onclick="mostrarMensaje(9)"><p>9</p></td> 
+			<td align="center" onclick="mostrarMensaje(0)"><p>0</p></td> 
 		</tr>
 		<tr>
-			<td align="center" onclick="operacion(1)">+</td> 
-			<td align="center" onclick="operacion(2)">-</td> 
-			<td align="center" onclick="operacion(3)">*</td> 
-			<td align="center" onclick="operacion(4)">/</td> 
-			<td align="center" onclick="operacion(5)">raiz</td> 
-			<td align="center" onclick="operacion(6)">x2</td> 
+			<td align="center" onclick="operacion(1)"><p>+</p></td> 
+			<td align="center" onclick="operacion(2)"><p>-</p></td> 
+			<td align="center" onclick="operacion(3)"><p>*</p></td> 
+			<td align="center" onclick="operacion(4)"><p>/</p></td> 
+			<td align="center" onclick="operacion(5)"><img src="raiz.png"/></td> 
+			<td align="center" onclick="operacion(6)"><img src="x.png"/></td> 
 		<tr> 
-			<td align="center" onclick="operador(7)">senx</td> 
-			<td align="center" onclick="operador(8)">cosx</td> 
-			<td align="center" onclick="operador(9)">tanx</td> 
-			<td colspan="3"><input type="submit" value="="class="anchofijo" onclick="operacion(10)"></td> 
+			<td align="center" onclick="operador(7)"><p>senx</p></td> 
+			<td align="center" onclick="operador(8)"><p>cosx</p></td> 
+			<td align="center" onclick="operador(9)"><p>tanx</p></td> 
+			<td align="center" colspan="3" onclick="operacion(10)"><p>=</p></td> 
+			<td colspan="2" align="center" onclick="reiniciar()" title="limpiar la memoria"><p>C</p></td>
 		</tr>		
 	</table>
 
